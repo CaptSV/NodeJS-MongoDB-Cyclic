@@ -68,7 +68,7 @@ app.get("/", function (req, res) {
 
         res.redirect('/');
       } else {
-        res.render("list", {
+        res.render("/views/list", {
           listTitle: 'Today',
           newToDos: foundItems
         });
